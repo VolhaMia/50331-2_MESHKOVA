@@ -1,0 +1,4 @@
+﻿@model _50331_2_MESHKOVA.Models.Cart
+
+<a href=@Url.Action("Index","Cart",new { returnUrl=Request.Path})>@Model.GetTotal() калорий (@Model.GetItems().Sum(i=>i.Quantity))<span class="glyphicon glyphicon-shopping-cart"></span></a>
+

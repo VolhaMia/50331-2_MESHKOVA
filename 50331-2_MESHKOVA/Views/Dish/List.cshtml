@@ -1,0 +1,17 @@
+﻿@model _50331_2_MESHKOVA.Models.PageListViewModel<_50331_2_MESHKOVA.DAL.Entities.Dish>
+@using System.Text;
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List</h2>
+
+<div id="List">
+    @Html.Partial("ListPartial",Model)
+</div>
+
+@section SidePanel
+{
+    @Html.Action("Side","Menu")
+}
